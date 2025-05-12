@@ -1,0 +1,21 @@
+/* css/styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: rgb(128, 10, 10);
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: rgb(14, 4, 4);
+  text-align: center;
+  padding: 15px;
+}
