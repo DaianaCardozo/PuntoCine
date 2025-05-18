@@ -5,49 +5,84 @@
 
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Punto Cine</title>
+     <title>Punto Cine pagina web </title>
      <link rel="stylesheet" href="css/styles.css">
 
 
 </head>
-
+<!-- Body -> parte principal y visible de la página-->
 
 
  <body>
-        <header>
+    <!-- Encabezado puede contener el título principa  y el menú -->
+        <header class="contenedor-flex">
         <!-- Aca estamos dentro del header-->
               
-         <h1>Bienvenidos a Punto Cine</h1><img src="media/img/PUNTOCINE.png" alt="Logo de Punto Cine" width="100%">
-             
-         <img src="media/img/banner.png" alt="Banner decorativo" width="100%">
-         <h2>Donde el cine se convierte en experiencia</h2>
-                 
-             
+        <div class="barra-top">
+         <img class="logo" src="media/img/PUNTOCINE.png" alt="Logo de Punto Cine" width="15%" height="45%">
+   
          <nav>
-         <!-- Aca estamos dentro del nav-->
-           <ul>
-             <li><a href="">Inicio</a></li>
-             <li><a href="">Nosotros</a></li>
-             <li><a href="">Productos</a></li>
-             <li><a href="">Servicios</a></li>
-             <li><a href="">Contacto</a></li>
+
+        <!-- barra de navegación (nav) -->
+           <ul  class="nav-list">
+              <li>
+               <a href="./nosotros.html">Nosotros</a>
+            </li>
+             <li>
+               <a href="./productos.html">Productos</a>
+            </li>
+             <li>
+               <a href="servicios.html">Servicios</a>
+            </li>
+             <li>
+               <a href="contacto.html">Contacto</a>
+            </li>
              </ul>
-         </nav>
+          </nav>
+          </div>
+               <hr class="linea-separadora" />
+
+            <!-- Titulo principal o de primera categoria (h1) -->
      </header>
- 
+       <!-- sección principal (main)) -->
+
      <main>
        <!-- Aca estamos dentro del main-->
+
+         <section> 
+            <h1 class="texto-intro">PELICULAS EN CARTELERA</h1>
+          </section>
+
+      <div class="contenedor-cartelera">   
+       <div class="pelicula1"> SOY PELICULA 1</div>
+       <div class="pelicula2">SOY PELICULA 2 </div>
+       <div class="pelicula3">SOY PELICULA 3</div>
+       <div class="pelicula4">SOY PELICULA 4</div>
+      </div>
+
+
+
+
+        <div>
         <section>
-       <p>
+       <p class="texto-inicial">
            En  <strong> Punto Cine </strong>  cada función es un evento. Viví el cine como nunca antes, con salas premium, sonido envolvente y una programación pensada para vos.
            <em>PUNTO CINE: tu destino para vivir el cine en su máxima expresión.</em>
         </p>
-         <section>
+         </section>
+       </div>
+ <!-- distintas secciones de la pagina web (section)-->
+
+       <hr class="linea-separadora2">
+        <section>
          <h3>Ubicación</h3>
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18583.809327910734!2d-58.42711083521047!3d-34.574200419222436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1746871770529!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </section>
-         <p><a href="https://www.google.com/maps/place/Palermo,+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.5733558,-58.4622153,13z/data=!3m1!4b1!4m6!3m5!1s0x95bcb59c771eb933:0x6b3113b596d78c69!8m2!3d-34.5780655!4d-58.4265317!16zL20vMDQ3a3ps?authuser=0&entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank">Ver en Google Maps</a></p>
+         
+          <p><a href="https://www.google.com/maps/place/Palermo,+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.5733558,-58.4622153,13z/data=!3m1!4b1!4m6!3m5!1s0x95bcb59c771eb933:0x6b3113b596d78c69!8m2!3d-34.5780655!4d-58.4265317!16zL20vMDQ3a3ps?authuser=0&entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank">Ver en Google Maps</a></p>
+        
         </section>
+          <hr class="linea-separadora3">
+        <section>
+          <h3>Formulario</h3>
 
           <form action="https://formspree.io/f/xpwdjevj"
              method="POST">
@@ -60,15 +95,16 @@
     
              <button type="submit">Enviar</button>
          </form>
-
+        </section>
 
      </main>
+       <hr class="linea-separadora4">
      <footer>
-        <!--Aca estamos dentro del footer-->
+        <!-- En el footer se pueden agregar: datos de contacto, redes sociales, menues, avisos legales -->
 
          <p>Contacto: <a href="mailto:puntocine9@gmail.com">puntocine9@gmail.com</a></p>
-         <p>Seguinos en Redes Sociales apra ver lo que se viene</p>
-          <ul>
+         <p>Seguinos en Redes Sociales para ver lo que se viene</p>
+          <ul class="lista-redes-sociales">
              <li><a href="https://www.facebook.com/profile.php?id=61576358240986" target="_blank">Facebook</a></li>
              <li><a href="https://www.instagram.com/puntocine9/" target="_blank">Instagram</a></li>
              <li><a href="https://x.com/PuntoCineTW" target="_blank">X</a></li>
