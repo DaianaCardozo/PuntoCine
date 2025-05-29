@@ -1,26 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <main class="detalle-pelicula">
+ 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Propuesta - Punto Cine</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
 
-  <div class="contenido-pelicula">
-    <div class="poster-pelicula">
-      <img src="../media/img/posterlapropuesta.png" alt="La propuesta">
+
+  </style>
+</head>
+<body  class="pagina-pelicula">
+  <header class="contenedor-flex">
+          
+        <!-- Aca estamos dentro del header-->
+         
+        <div class="barra-top">
+            <img class="logo" src="../media/img/LogoPuntoCine.png" alt="Logo de Punto Cine">
+                 <nav>
+                 <!-- barra de navegación (nav) -->
+                  <ul class="nav-list">
+                    <li><a href="./index.html">CARTELERA</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                  </ul>
+                 </nav>
+              </div>
+
+
+            <!-- Titulo principal o de primera categoria (h1) -->
+     </header>
+
+  <main class="detalle-pelicula">
+    <div class="contenido-pelicula">
+      <!-- Poster  -->
+       <div class="columna-izquierda">
+      <div class="poster-pelicula">
+        <img src="../media/img/posterlapropuesta.png" alt="La Propuesta">
+        <div class="titulo-img">La Propuesta</div>
+      </div>
+
+      <!-- Información general -->
+   <div class="info-pelicula">
+        <h1> Comedia/Romance</h1>
+        <p>
+          <strong>Detalles:</strong>Margaret, una famosa e influyente editora de Nueva York, está a punto de ser deportada a Canadá. Para evitarlo, declara que está comprometida con su ayudante Andrew. Él está dispuesto a participar en la farsa, pero imponiendo ciertas condiciones.<br>
+          <strong>Duración:</strong>  1h 48m<br>
+          <strong>Director:</strong>  Anne Fletcher
+        </p>
+         </div>
+       <!-- IFRAME del tráiler -->
+        <div class="trailer">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/rCs8skCWF98?si=pnJOHg0qUaYAX01-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      
+        <a href="../index.html" class="btn-volver">← Volver a cartelera</a>
+      </div>
+             <div class="horarios">
+              <h2>Horarios disponibles</h2>
+                  <ul>
+                       <li>Jueves - 18:00, 21:00</li>
+                      <li>Viernes - 18:00, 21:00, 23:59</li>
+                     <li>Sábado - 16:00, 19:00, 22:00</li>
+                    <li>Domingo - 14:00, 17:00, 20:00</li>
+                  </ul>
+             </div>
     </div>
-    <div class="info-pelicula">
-      <h1>Batman</h1>
-      <p>
-        Gotham está en peligro. Bruce Wayne vuelve a convertirse en Batman para enfrentar una amenaza que pondrá en jaque la ciudad...
-      </p>
-      <a href="../index.html" class="btn-volver">← Volver a cartelera</a>
-    </div>
-  </div>
-</main>
+  </main>
 </body>
 </html>
