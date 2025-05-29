@@ -1,30 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Punto Cine</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header class="contenedor-flex">
-          
-        <!-- Aca estamos dentro del header-->
-         
-        <div class="barra-top">
-         <img class="logo" src="media/img/LogoPuntoCine.png" alt="Logo de Punto Cine">
-           <nav>
-             <!-- barra de navegación (nav) -->
-            <ul class="nav-list">
-              <li><a href="./nosotros.html">Nosotros</a></li>
-              <li><a href="./productos.html">Productos</a></li>
-              <li><a href="./servicios.html">Servicios</a></li>
-              <li><a href="./contacto.html">Contacto</a></li>
-             </ul>
-             </nav>
-            </div>
 
-      </header>
-    <p>Contacto</p>
+<body class="pagina-contacto">
+  <header class="contenedor-flex">
+    <div class="barra-top">
+      <img class="logo" src="../media/img/LogoPuntoCine.png" alt="Logo de Punto Cine">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="./index.html">CARTELERA</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./servicios.html">Servicios</a></li>
+          <li><a href="./contacto.html" class="activo">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<section class="preguntas-frecuentes">
+  <h2>PREGUNTAS FRECUENTES</h2>
+
+  <div class="faq-item">
+    <strong>¿Cuál es el precio de las entradas?</strong>
+    <p>El precio de las entradas lo podés consultar en la sección <a href="./servicios.html">PRECIOS ENTRADAS</a> 
+  </div>
+
+  <div class="faq-item">
+    <strong>¿Qué beneficios y promociones tienen?</strong>
+    <p>Los beneficios y promociones los podes consultar en la sección <a href="./servicios.html">PROMOCIONES</a> Recordá que las promociones y beneficios no son acumulables.</p>
+  </div>
+
+  <div class="faq-item">
+    <strong>¿Los menores de 2 años pagan entrada?</strong>
+    <p>No, pero deben permanecer en la butaca del adulto a cargo.</p>
+  </div>
+
+  <div class="faq-item">
+    <strong>Tengo Certificado Único de Discapacidad (CUD), ¿cómo compro mis entradas?</strong>
+    <p>Deben comprarse en boletería presentando los documentos. Se pueden adquirir hasta 2 entradas a precio especial.</p>
+  </div>
+
+  <div class="faq-item">
+    <strong>¿Tengo que registrarme para comprar entradas?</strong>
+    <p>Sí, es necesario crear un usuario para acceder a tus compras.</p>
+  </div>
+
+  <div class="faq-item">
+    <strong>Tenía usuario en la web anterior y no me deja ingresar, ¿qué hago?</strong>
+    <p>Debés registrarte nuevamente.</p>
+  </div>
+
+  <div class="faq-item">
+    <strong>¿Qué pasa si compré sin estar registrado?</strong>
+    <p>Registrate con el mismo mail para acceder a tus compras.</p>
+  </div>
+
+  <div class="faq-item">
+    <strong>¿Puedo anular mis entradas sin estar registrado?</strong>
+    <p>No, necesitás registrarte con el mail de compra para gestionar tus entradas.</p>
+  </div>
+
+  <div class="faq-item">
+    <strong>¿Cómo retiro mis entradas si no soy titular de la tarjeta?</strong>
+    <p>Con el código de confirmación, debe estar presente el titular con tarjeta y DNI.</p>
+  </div>
+
+  <div class="faq-item">
+    <strong>¿Menores en películas para mayores?</strong>
+    <p>Sólo acompañados por padres o tutores legales. En algunos casos se requiere autorización escrita.</p>
+  </div>
+
+  <div class="faq-item">
+    <strong>¿Puedo cambiar mis entradas?</strong>
+    <p>No se pueden cambiar, pero sí anular hasta 120 min antes desde MIS COMPRAS.</p>
+  </div>
+
+  <div class="faq-item">
+    <strong>No puedo ver la cartelera de toda la semana, ¿por qué?</strong>
+    <p>La cartelera se actualiza los jueves a primera hora. Desde entonces podés comprar hasta el miércoles siguiente.</p>
+  </div>
+</section>
+
+
+  <main class="contenedor-contacto">
+    <h1>Contacto</h1>
+    <p>¿Tenés consultas, sugerencias o querés trabajar con nosotros? ¡Escribinos!</p>
+
+    <form action="https://formspree.io/f/meogyvbo" method="POST" class="formulario-contacto">
+      <div class="form-row">
+        <input type="text" name="nombre" placeholder="Nombre*" required>
+        <input type="email" name="email" placeholder="Correo electrónico*" required>
+      </div>
+
+      <textarea name="mensaje" placeholder="Escribí tu mensaje aquí..." rows="6" required></textarea>
+      
+      <button type="submit">Enviar</button>
+    </form>
+
+
+    <div class="ubicacion-mapa">
+        <h2>¿Dónde estamos?</h2>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.7745651037876!2d-58.52574432452954!3d-34.5085990524805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0ee292497e9%3A0xf9a611e58747f528!2sUnicenter%20Shopping!5e0!3m2!1ses!2sar!4v1748476391213!5m2!1ses!2sar" 
+          width="100%" 
+         height="450" 
+        style="border:0; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);" 
+        allowfullscreen="" 
+        loading="lazy" 
+         referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </iframe>
+       </div>
+
+    <a href="../index.html" class="btn-volver">← Volver a cartelera</a>
+  </main>
+
+<hr class="linea-separadora4">
+
+<footer class="footer-redes">
+  <div class="redes-container">
+    <span class="seguinos">SEGUINOS</span>
+    <a href="https://www.facebook.com/profile.php?id=61576358240986" target="_blank" class="icono-red"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://x.com/PuntoCineTW" target="_blank" class="icono-red"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://www.instagram.com/puntocine9/" target="_blank" class="icono-red"><i class="fab fa-instagram"></i></a>
+  </div>
+
+ <hr class="linea-separadora-footer">
+
+  <div class="footer-copy">
+    <p>&copy; 2025 PuntoCine. Todos los derechos reservados.</p>
+  </div>
+
+</footer>
 </body>
 </html>

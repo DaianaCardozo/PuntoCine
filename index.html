@@ -11,7 +11,8 @@
     <!-- Bootstrap JS + dependencias -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
      <link rel="stylesheet" href="css/styles.css">
-
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <!-- Body -> parte principal y visible de la página-->
@@ -24,17 +25,17 @@
         <!-- Aca estamos dentro del header-->
          
         <div class="barra-top">
-         <img class="logo" src="media/img/LogoPuntoCine.png" alt="Logo de Punto Cine">
-           <nav>
-             <!-- barra de navegación (nav) -->
-            <ul class="nav-list">
-              <li><a href="./nosotros.html">Nosotros</a></li>
-              <li><a href="./productos.html">Productos</a></li>
-              <li><a href="./servicios.html">Servicios</a></li>
-              <li><a href="./contacto.html">Contacto</a></li>
-             </ul>
-             </nav>
-            </div>
+            <img class="logo" src="media/img/LogoPuntoCine.png" alt="Logo de Punto Cine">
+                 <nav>
+                 <!-- barra de navegación (nav) -->
+                  <ul class="nav-list">
+                    <li><a href="./index.html">CARTELERA</a></li>
+                    <li><a href="./productos.html">PRODUCTOS</a></li>
+                    <li><a href="./servicios.html">SERVICIOS</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>
+                  </ul>
+                 </nav>
+              </div>
 
 
             <!-- Titulo principal o de primera categoria (h1) -->
@@ -46,15 +47,15 @@
            <div class="carousel-inner">
 
            <div class="carousel-item active">
-             <img src="media/img/descuentocine50off.png" class="d-block w-100" alt="Promo 1">
+             <img src="media/img/bannerminecraft.png" class="d-block w-100" alt="Promo 1">
        </div>
 
        <div class="carousel-item">
-           <img src="media/img/EntradasAnticipadas.png" class="d-block w-100" alt="Promo 2">
+           <img src="media/img/bannerestreno.png" class="d-block w-100" alt="Promo 2">
        </div>
 
         <div class="carousel-item">
-          <img src="media/img/combocineBALDE.png" class="d-block w-100" alt="Promo 3">
+          <img src="media/img/bannerestreno2.png" class="d-block w-100" alt="Promo 3">
        </div>
 
       </div>
@@ -74,143 +75,183 @@
        <!-- Aca estamos dentro del main-->
 
          <section> 
-            <h1 class="titulo-seccion">PELICULAS EN CARTELERA</h1>
+            <h1 class="titulo-seccion">PELÍCULAS EN CARTELERA</h1>
           </section>
-
+       
       <div class="contenedor-cartelera">   
-       <div class="pelicula">
-         <div class="poster" style="background-image: url('media/img/posterbatman.png');"></div>
-          <h3 class="titulo-pelicula">Batman</h3>
+        <a href="peliculas/batman.html" class="pelicula-link">
+           <div class="pelicula">
+            <div class="poster" style="background-image: url('media/img/posterbatman.png');"></div>
+           <h3 class="titulo-pelicula">Batman</h3>
           </div>
-       <div class="pelicula">
-        <div class="poster" style="background-image: url('media/img/posterdeadpool.png');"></div>
-         <h3 class="titulo-pelicula">Deadpool</h3>
+         </a>
+        <a href="peliculas/deadpool.html" class="pelicula-link">
+           <div class="pelicula">
+             <div class="poster" style="background-image: url('media/img/posterdeadpool.png');"></div>
+             <h3 class="titulo-pelicula">Deadpool</h3>
+             </div>
+         </a>
+        <a href="peliculas/alpha.html" class="pelicula-link">
+             <div class="pelicula">
+              <div class="poster" style="background-image: url('media/img/posteralpha.png');"></div>
+             <h3 class="titulo-pelicula">Alpha</h3>
+             </div>
+          </a>
+        <a href="peliculas/fragmentado.html" class="pelicula-link">
+             <div class="pelicula">
+             <div class="poster" style="background-image: url('media/img/posterfragmentado.png');"></div>
+             <h3 class="titulo-pelicula">Fragmentado</h3>
+            </div>
+            </a>
+          <a href="peliculas/elhobbit.html" class="pelicula-link">
+             <div class="pelicula">
+             <div class="poster" style="background-image: url('media/img/posterelhobbit.png');"></div>
+              <h3 class="titulo-pelicula">El Hobbit</h3>
+             </div>
+           </a>
+         <a href="peliculas/furiosa.html" class="pelicula-link">
+            <div class="pelicula">
+            <div class="poster" style="background-image: url('media/img/posterfuriosa.png');"></div>
+             <h3 class="titulo-pelicula">Furiosa</h3>
+            </div>
+           </a>
+          <a href="peliculas/elsilencio.html" class="pelicula-link">
+              <div class="pelicula">
+                <div class="poster" style="background-image: url('media/img/posterelsilencio.png');"></div>
+               <h3 class="titulo-pelicula">El silencio de los corderos</h3>
+                </div>
+           </a>
+         <a href="peliculas/lalaland.html" class="pelicula-link">
+             <div class="pelicula">
+             <div class="poster" style="background-image: url('media/img/posterlalaland.png');"></div>
+             <h3 class="titulo-pelicula">La La Land</h3>
+            </div>
+           </a>
+         <a href="peliculas/efectomariposa.html" class="pelicula-link">
+                    <div class="pelicula">
+              <div class="poster" style="background-image: url('media/img/posterefectomariposa.png');"></div>
+                <h3 class="titulo-pelicula">Efecto Mariposa</h3>
+            </div>
+           </a>
+          <a href="peliculas/luna.html" class="pelicula-link">
+                 <div class="pelicula">
+                <div class="poster" style="background-image: url('media/img/posterLuna.png');"></div>
+               <h3 class="titulo-pelicula">La Otra Cara de la Luna</h3>
+                 </div>
+            </a>
+          <a href="peliculas/jumanji.html" class="pelicula-link">
+                 <div class="pelicula">
+                 <div class="poster" style="background-image: url('media/img/posterjumanji.png');"> </div> 
+                  <h3 class="titulo-pelicula">Jumanji</h3>
+                  </div>
+             </a>
+          <a href="peliculas/lapropuesta.html" class="pelicula-link">
+                 <div class="pelicula">
+                  <div class="poster" style="background-image: url('media/img/posterlapropuesta.png');"></div>
+                     <h3 class="titulo-pelicula">La Propuesta</h3>
+                 </div>
+               </a>
+          <a href="peliculas/LJDH.html" class="pelicula-link">
+              <div class="pelicula">
+               <div class="poster" style="background-image: url('media/img/posterLJDH.png');"></div>
+              <h3 class="titulo-pelicula">Los Juegos del Hambre</h3>
+               </div>
+             </a>
+          <a href="peliculas/LDWS.html" class="pelicula-link">
+                  <div class="pelicula">
+                 <div class="poster" style="background-image: url('media/img/posterLDWS.png');"></div>
+                     <h3 class="titulo-pelicula">El Lobo de Wall Street</h3>
+               </div>
+             </a>
+          <a href="peliculas/naceunaestrella.html" class="pelicula-link">
+              <div class="pelicula">
+              <div class="poster" style="background-image: url('media/img/posternaceunaestrella.png');"></div>
+             <h3 class="titulo-pelicula">Nace una Estrella</h3>
+             </div>
+              </a>
+          <a href="peliculas/wicked.html" class="pelicula-link">
+               <div class="pelicula">
+                  <div class="poster" style="background-image: url('media/img/posterwicked.png');"></div>
+                     <h3 class="titulo-pelicula">Wicked</h3>
+               </div>
+               </a>
+          <a href="peliculas/minecraft.html" class="pelicula-link">
+                  <div class="pelicula">
+                  <div class="poster" style="background-image: url('media/img/posterminecraft.png');"></div>
+                 <h3 class="titulo-pelicula">Minecraft</h3>
+                </div>
+              </a>
+
+
+             
+            </div>
+                  <section> 
+            <h1 class="titulo-seccion">PELÍCULAS EN PREVENTA</h1>
+          </section>
+       
+         <div class="contenedor-cartelera">   
+        <a href="peliculas/bailarina.html" class="pelicula-link">
+           <div class="pelicula">
+            <div class="poster" style="background-image: url('media/img/posterbailarina.png');"></div>
+           <h3 class="titulo-pelicula">Bailarina</h3>
           </div>
-       <div class="pelicula">
-       <div class="poster" style="background-image: url('media/img/posteralpha.png');"></div>
-        <h3 class="titulo-pelicula">Alpha</h3>
-          </div>
-       <div class="pelicula">
-       <div class="poster" style="background-image: url('media/img/posterfragmentado.png');"></div>
-        <h3 class="titulo-pelicula">Fragmentado</h3>
-          </div>
-       <div class="pelicula">
-       <div class="poster" style="background-image: url('media/img/posterelhobbit.png');"></div>
-        <h3 class="titulo-pelicula">El Hobbit</h3>
-          </div>
-       <div class="pelicula">
-       <div class="poster" style="background-image: url('media/img/posterfuriosa.png');"></div>
-         <h3 class="titulo-pelicula">Furiosa</h3>
-          </div>
-       <div class="pelicula">
-       <div class="poster" style="background-image: url('media/img/posterelsilencio.png');"></div>
-         <h3 class="titulo-pelicula">El silencio de los corderos</h3>
-          </div>
-       <div class="pelicula">
-       <div class="poster" style="background-image: url('media/img/posterlalaland.png');"></div>
-         <h3 class="titulo-pelicula">La La Land</h3>
-          </div>
-       <div class="pelicula">
-       <div class="poster" style="background-image: url('media/img/posterefectomariposa.png');"></div>
-         <h3 class="titulo-pelicula">Efecto Mariposa</h3>
-          </div>
-       <div class="pelicula">
-       <div class="poster" style="background-image: url('media/img/posterLuna.png');"></div>
-         <h3 class="titulo-pelicula">La Otra Cara de la Luna</h3>
-          </div>
-       <div class="pelicula">
-       <div class="poster" style="background-image: url('media/img/posterjumanji.png');"> </div> 
-        <h3 class="titulo-pelicula">Jumanji</h3>
-          </div>
-       <div class="pelicula">
-       <div class="poster" style="background-image: url('media/img/posterlapropuesta.png');"></div>
-         <h3 class="titulo-pelicula">La Propuesta</h3>
-          </div>
-       <div class="pelicula">
-       <div class="poster" style="background-image: url('media/img/posterLJDH.png');"></div>
-         <h3 class="titulo-pelicula">Los Juegos del Hambre</h3>
-          </div>
-       <div class="pelicula">
-       <div class="poster" style="background-image: url('media/img/posterLDWS.png');"></div>
-         <h3 class="titulo-pelicula">El Lobo de Wall Street</h3>
-          </div>
-       <div class="pelicula">
-       <div class="poster" style="background-image: url('media/img/posternaceunaestrella.png');"></div>
-         <h3 class="titulo-pelicula">Nace una Estrella</h3>
-          </div>
-       <div class="pelicula">
-       <div class="poster" style="background-image: url('media/img/posterwicked.png');"></div>
-         <h3 class="titulo-pelicula">Wicked</h3>
-          </div>
-       <div class="pelicula">
-       <div class="poster" style="background-image: url('media/img/posterminecraft.png');"></div>
-         <h3 class="titulo-pelicula">Minecraft</h3>
-          </div>
+         </a>
+        <a href="peliculas/misionimposible.html" class="pelicula-link">
+           <div class="pelicula">
+             <div class="poster" style="background-image: url('media/img/postermisionimposible.png');"></div>
+             <h3 class="titulo-pelicula">Mision Imposible</h3>
+             </div>
+         </a>
+       <a href="peliculas/dragon.html" class="pelicula-link">
+  <div class="pelicula">
+    <div class="poster" style="background-image: url('media/img/posterentrenaratudragon.png');"></div>
+    <h3 class="titulo-pelicula">Como entrenar a tu Dragon</h3>
+  </div>
+</a>
+</div> <!-- Cierre del contenedor-cartelera -->
+
+<hr class="linea-separadora3" />
+
+<section class="newsletter-wrapper">
+  <div class="newsletter-container">
+    <h3 class="newsletter-titulo">SUSCRIBITE AL NEWSLETTER</h3>
+
+    <form action="https://formspree.io/f/xanorazz" method="POST" class="newsletter-form">
+      <div class="form-row">
+        <input type="text" name="nombre" placeholder="Nombre*" required>
+        <input type="text" name="apellido" placeholder="Apellido*" required>
+      </div>
+      <div class="form-row">
+        <input type="email" name="email" placeholder="Mail*" required>
+        <select name="sala" required>
+          <option value="" disabled selected>Seleccione una sala</option>
+          <option value="sala1">Sala Unicenter</option>
+          <option value="sala2">Sala Shopping Caballito</option>
+        </select>
       </div>
 
+      <p class="newsletter-texto">¡Registrate para recibir nuestras novedades!</p>
+      <button type="submit">ENVIAR</button>
+    </form>
+  </div>
+</section>
 
+<hr class="linea-separadora4">
 
+<footer class="footer-redes">
+  <div class="redes-container">
+    <span class="seguinos">SEGUINOS</span>
+    <a href="https://www.facebook.com/profile.php?id=61576358240986" target="_blank" class="icono-red"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://x.com/PuntoCineTW" target="_blank" class="icono-red"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://www.instagram.com/puntocine9/" target="_blank" class="icono-red"><i class="fab fa-instagram"></i></a>
+  </div>
 
-        <div>
-        <section>
-       <p class="texto-inicial">
-           En  <strong> Punto Cine </strong>  cada función es un evento. Viví el cine como nunca antes, con salas premium, sonido envolvente y una programación pensada para vos.
-           <em>PUNTO CINE: tu destino para vivir el cine en su máxima expresión.</em>
-        </p>
-         </section>
-       </div>
- <!-- distintas secciones de la pagina web (section)-->
+ <hr class="linea-separadora-footer">
 
-       <hr class="linea-separadora2">
-        <section>
-         <h3>Ubicación</h3>
-         
-          <p><a href="https://www.google.com/maps/place/Palermo,+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.5733558,-58.4622153,13z/data=!3m1!4b1!4m6!3m5!1s0x95bcb59c771eb933:0x6b3113b596d78c69!8m2!3d-34.5780655!4d-58.4265317!16zL20vMDQ3a3ps?authuser=0&entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank">Ver en Google Maps</a></p>
-        
-        </section>
-          <hr class="linea-separadora3">
-        <section>
-          <h3>Formulario</h3>
+  <div class="footer-copy">
+    <p>&copy; 2025 PuntoCine. Todos los derechos reservados.</p>
+  </div>
 
-          <form action="https://formspree.io/f/xpwdjevj"
-             method="POST">
-             <label for="nombre">Nombre:</label>
-             <input type="text" id="nombre" name="nombre" required>
-             <label for="email">Correo electrónico:</label>
-             <input type="email" id="email" name="email" required>
-             <label for="mensaje">Mensaje:</label>
-             <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
-    
-             <button type="submit">Enviar</button>
-         </form>
-        </section>
-
-     </main>
-       <hr class="linea-separadora4">
-     <footer>
-        <!-- En el footer se pueden agregar: datos de contacto, redes sociales, menues, avisos legales -->
-
-         <p>Contacto: <a href="mailto:puntocine9@gmail.com">puntocine9@gmail.com</a></p>
-         <p>Seguinos en Redes Sociales para ver lo que se viene</p>
-          <ul class="lista-redes-sociales">
-             <li><a href="https://www.facebook.com/profile.php?id=61576358240986" target="_blank">Facebook</a></li>
-             <li><a href="https://www.instagram.com/puntocine9/" target="_blank">Instagram</a></li>
-             <li><a href="https://x.com/PuntoCineTW" target="_blank">X</a></li>
-          </ul>
- 
-          <h3><strong>Política de Privacidad | Términos y Condiciones</strong></h3>
-
-             <p>
-                La información recopilada en este sitio se utiliza únicamente con fines de contacto y mejora del servicio. Punto Cine garantiza la confidencialidad de los datos proporcionados por los usuarios. Al navegar por este sitio, aceptás nuestras políticas de privacidad y los términos y condiciones de uso. Para más información, comunicate con nuestro equipo.
-             </p>
-             <p>&copy; PuntoCine Todos los derechos reservados.</p>
-        
-     </footer>
-
-
-</body>
-
-
-</html>
+</footer>
 
 
