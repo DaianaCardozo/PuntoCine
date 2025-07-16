@@ -143,106 +143,116 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
 }
-/* ==== Estilo general para todas las películas ==== */
-.pagina-pelicula .detalle-pelicula {
-  margin-top: 60px;
+
+/* ==== Estilo para seleccion de asientos ==== */
+.asiento {
+  background-color: #444451;
+  height: 18px;
+  width: 20px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  transition: transform 0.2s ease;
+}
+
+.fila {
   display: flex;
-  justify-content: flex-start;
-  padding-left: 40px;
+  justify-content: center;
 }
-.pagina-pelicula .contenido-pelicula {
-  display: grid;
-  grid-template-columns: 1fr 300px; 
-  gap: 20px;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 40px 10px;
-  align-items: start;
+.contenedor-pelicula {
+  margin: 20px 0;
+
 }
 
-@media (max-width: 768px) {
-  .pagina-pelicula .contenido-pelicula {
-    grid-template-columns: 1fr;
-  }
-}
-.pagina-pelicula .columna-izquierda {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.pagina-pelicula .poster-pelicula img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+.contenedor-pelicula select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
-.pagina-pelicula .titulo-img {
-  font-size: 1.5rem;
-  margin-top: 10px;
-  font-weight: bold;
-  text-align: left;
+.asiento.seleccionado {
+  background-color: #6faef6;
 }
 
-.pagina-pelicula .info-pelicula {
-  text-align: left;
-}
-.pelicula-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-.pagina-pelicula .trailer {
-  max-width: 100%;
-  aspect-ratio: 16 / 9;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
-  overflow: hidden;
-}
-.pagina-pelicula .horarios {
-
-  background-color: #222;
-  padding: 20px 25px;
-  border-left: 5px solid #6936d8;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-  font-family: 'Roboto', sans-serif;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  animation: fadeIn 0.6s ease-in;
+.asiento.ocupado {
+  background-color: #fff;
 }
 
-.pagina-pelicula .horarios h2 {
- font-size: 1.3rem;
-  color: #ffffff;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #6936d8;
-  padding-bottom: 5px;
+.asiento:nth-of-type(2) {
+  margin-right: 18px;
 }
 
-.pagina-pelicula .horarios ul {
+.asiento:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.asiento:not(.ocupado):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .asiento:not(.ocupado):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
   list-style-type: none;
-  padding-left: 0;
-  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 10px;
+}
+
+.pantalla {
+  background-color: #fff;
+  height:70px ;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-15deg);
+  box-shadow: 0 3px 10px rgba(255,255,255,0.75);
+}
+
+.contenedor {
+  perspective: 1000px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+p.text {
+  margin: 5px 0;
+}
+
+p text span {
+  color: #6feaf6;
+
 }
 
 
-.pagina-pelicula .horarios ul li::before {
-  content: "🕒 ";
-  color: #6936d8;
-  margin-right: 6px;
-}
 
-.pagina-pelicula .horarios ul li {
-  margin-bottom: 8px;
-  color: #ddd;
-}
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
 .poster-pelicula {
   grid-area: poster;
 }
@@ -278,11 +288,13 @@ nav {
   font-weight: bold;
   padding: 10px;
   background-color: #111111; 
-color: white;
+ color:white;
   width: 100%;
   text-align: center;
-  border-top: 1px solid #222; 
-}
+  border-top: 1px solid #222;}
+
+
+
 .grid-peliculas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -549,6 +561,16 @@ form {
   border-radius: 6px;
 }
 
+.errores-formulario {
+  color: #ff4d4d;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.errores-formulario p {
+  margin-bottom: 5px;
+}
+
 textarea {
   padding: 1rem;
   border: none;
@@ -586,7 +608,7 @@ button:hover {
   padding-bottom: 0.5rem;
 }
 .seccion-servicios {
-  padding: 2rem 2rem; /* más aire interno */
+  padding: 2rem 2rem; 
   max-width: 1000px;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.02);
@@ -630,77 +652,51 @@ button:hover {
   border-left: 3px solid #6936d8;
 }
 
-.servicios-promos img.promo-img {
-  width: 100%;
-  max-width: 600px;
-  margin: 1rem auto 0;
+.promo-img {
+  width: 400px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
   border-radius: 10px;
   box-shadow: 0 0 10px #6936d8;
-  display: block;
 }
 
 .btn-volver-wrapper {
   text-align: center;
   margin-top: 2rem;
 }
-.bloque-servicio {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 1.5rem 2rem;
-  margin-bottom: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(105, 54, 216, 0.3);
-}
-
-.bloque-servicio h2 {
-  color: #b78aff;
-  border-bottom: 1px solid #6936d8;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.bloque-servicio p {
-  margin-bottom: 1rem;
-}
-
-.bloque-servicio ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-}
-.promo-img {
-  width: 100%;
-  max-width: 400px;
-  margin: 1rem auto 0;
-  display: block;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #6936d8;
-}
+/* 🟣 Sección productos cine */
 .productos-cine {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-
-.contenedor-productos {
+/* 🟪 Contenedor general de productos */
+.contenedor-producto {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
 }
 
-.producto {
+/* 🟡 Tarjeta individual */
+.card {
   background-color: #1a1a1a;
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
   box-shadow: 0 0 10px rgba(105, 54, 216, 0.5);
   transition: transform 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.producto:hover {
+.card:hover {
   transform: scale(1.05);
 }
 
-.producto-img {
+/* 🖼️ Imagen del producto */
+.imagen {
   max-width: 100%;
   border-radius: 8px;
   height: 200px;
@@ -708,16 +704,89 @@ button:hover {
   margin-bottom: 1rem;
 }
 
-.producto-nombre {
+/* 🏷️ Nombre del producto */
+.nombre {
   font-size: 1.3rem;
   margin: 0.5rem 0;
-  font-family: 'Roboto', sans-serif;
   color: white;
 }
 
-.producto-precio {
+/* 💰 Precio del producto */
+.card div:nth-child(2) {
   font-size: 1.2rem;
   color: #bdaaff;
+}
+
+/* 📄 Descripción */
+.desc {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+/* 🛒 Botón agregar */
+.button {
+  background-color: #6936d8;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+* 🛒 Estilos para la sección del carrito */
+#wishlist {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 2rem;
+  margin: 3rem auto;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(105, 54, 216, 0.4);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#wishlist h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #b78aff;
+  border-bottom: 2px solid #6936d8;
+  padding-bottom: 0.5rem;
+}
+
+#wishlist-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+#wishlist-list li {
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #444;
+}
+
+/* Botón de vaciar carrito */
+#wishlist button {
+  background-color: #6936d8;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#wishlist button:hover {
+  background-color: #b78aff;
+}
+
+
+.button:hover {
+  background-color: #b78aff;
 }
 
 

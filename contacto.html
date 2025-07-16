@@ -92,16 +92,19 @@
     <h1>Contacto</h1>
     <p>¿Tenés consultas, sugerencias o querés trabajar con nosotros? ¡Escribinos!</p>
 
-    <form action="https://formspree.io/f/meogyvbo" method="POST" class="formulario-contacto">
-      <div class="form-row">
-        <input type="text" name="nombre" placeholder="Nombre*" required>
-        <input type="email" name="email" placeholder="Correo electrónico*" required>
-      </div>
+   <form id="form-contacto" class="formulario-contacto" novalidate>
+    <div class="form-row">
+    <input type="text" id="nombre" name="nombre" placeholder="Nombre*" required>
+    <input type="email" id="email" name="email" placeholder="Correo electrónico*" required>
+    </div>
 
-      <textarea name="mensaje" placeholder="Escribí tu mensaje aquí..." rows="6" required></textarea>
-      
-      <button type="submit">Enviar</button>
-    </form>
+    <textarea id="mensaje" name="mensaje" placeholder="Escribí tu mensaje aquí..." rows="6" required></textarea>
+
+    <div id="errores" class="errores-formulario"></div>
+  
+   <button type="submit" id="btnEnviar">Enviar</button>
+   </form>
+
 
 
     <div class="ubicacion-mapa">
@@ -136,5 +139,7 @@
   </div>
 
 </footer>
-</body>
+
+<script src="./validacionContacto.js"></script>
+
 </html>

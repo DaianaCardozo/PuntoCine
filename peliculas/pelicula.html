@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Punto Cine - Película</title>
+  <link rel="stylesheet" href="../css/styles.css"/>
+</head>
+<body class="pagina-pelicula">
+  <header class="contenedor-flex">
+    <div class="barra-top">
+      <img class="logo" src="../media/img/LogoPuntoCine.png" alt="Logo de Punto Cine"/>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="./index.html">CARTELERA</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./servicios.html">Servicios</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="detalle-pelicula">
+    <div class="contenido-pelicula">
+      <div class="poster-pelicula">
+        <img id="poster" src="" alt="Poster de la película"/>
+        <h2 id="titulo">Cargando...</h2>
+      </div>
+
+      <div class="info-pelicula">
+        <h1 id="genero">Género</h1>
+        <p><strong>Detalles:</strong> <span id="descripcion">Descripción</span></p>
+        <p><strong>Duración:</strong> <span id="duracion"></span></p>
+        <p><strong>Director:</strong> <span id="director"></span></p>
+      </div>
+
+    
+
+
+      <div class="trailer">
+        <iframe id="trailer" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="contenedor-pelicula">
+      <label for="pelicula">Elegí una película:</label>
+     <select id="pelicula">
+        <option value="414906">Batman ($10000)</option>
+         <option value="293660">Deadpool ($10000)</option>
+        <option value="381288">Fragmentado ($10000)</option>
+        <option value="399404">Alpha ($10000)</option>
+        <option value="122917">El Hobbit ($10000)</option>
+       <option value="402900">Los Juegos del Hambre: En Llamas ($10000)</option>
+       <option value="106646">El Lobo de Wall Street ($10000)</option>
+       <option value="440021">Bailarina ($10000)</option>
+       <option value="575264">Misión Imposible: Sentencia Mortal ($10000)</option>
+       <option value="1016121">Minecraft ($10000)</option>
+      <option value="82702">Cómo Entrenar a tu Dragón ($10000)</option>
+       <option value="274">El Silencio de los Inocentes ($10000)</option>
+       <option value="592073">La Otra Cara de la Luna ($10000)</option>
+       <option value="313369">La La Land ($10000)</option>
+       <option value="695721">Furiosa ($10000)</option>
+       <option value="1958">Efecto Mariposa ($10000)</option>
+       <option value="20453">La Propuesta ($10000)</option>
+       <option value="353486">Jumanji ($10000)</option>
+       <option value="332562">Nace una Estrella ($10000)</option>
+       <option value="840430">Wicked ($10000)</option>
+      </select>
+     </div>
+
+      <ul class="showcase">
+      <li>
+       <div class="asiento"></div>
+        <small>Disponible</small>
+      </li>
+     <li>
+      <div class="asiento seleccionado"></div>
+       <small>Seleccionado</small>
+      </li>
+       <li>
+        <div class="asiento ocupado"></div>
+       <small>Ocupado</small>
+      </li>
+      </ul>
+
+
+      <div class="contenedor">
+  <div class="pantalla"></div>
+
+  <!-- Generar 5 filas con 10 asientos -->
+  <div class="fila">
+    <div class="asiento"></div><div class="asiento"></div><div class="asiento"></div><div class="asiento"></div><div class="asiento"></div>
+    <div class="asiento"></div><div class="asiento"></div><div class="asiento"></div><div class="asiento"></div><div class="asiento"></div>
+  </div>
+  <div class="fila">
+    <div class="asiento"></div><div class="asiento"></div><div class="asiento ocupado"></div><div class="asiento"></div><div class="asiento"></div>
+    <div class="asiento"></div><div class="asiento ocupado"></div><div class="asiento"></div><div class="asiento"></div><div class="asiento"></div>
+  </div>
+  <div class="fila">
+    <div class="asiento"></div><div class="asiento"></div><div class="asiento"></div><div class="asiento"></div><div class="asiento"></div>
+    <div class="asiento ocupado"></div><div class="asiento"></div><div class="asiento"></div><div class="asiento"></div><div class="asiento"></div>
+  </div>
+  <div class="fila">
+    <div class="asiento"></div><div class="asiento ocupado"></div><div class="asiento"></div><div class="asiento"></div><div class="asiento ocupado"></div>
+    <div class="asiento"></div><div class="asiento"></div><div class="asiento"></div><div class="asiento ocupado"></div><div class="asiento"></div>
+  </div>
+  <div class="fila">
+    <div class="asiento"></div><div class="asiento"></div><div class="asiento"></div><div class="asiento ocupado"></div><div class="asiento"></div>
+    <div class="asiento"></div><div class="asiento ocupado"></div><div class="asiento"></div><div class="asiento"></div><div class="asiento"></div>
+  </div>
+
+  <p class="texto">
+    Has seleccionado <span id="count">0</span> asientos con un precio total de $<span id="total">0</span>.
+  </p>
+</div>
+      <a href="../index.html" class="btn-volver">← Volver a cartelera</a>
+    </div>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>
+

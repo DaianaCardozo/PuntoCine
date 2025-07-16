@@ -1,78 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
- 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Batman - Punto Cine</title>
-  <link rel="stylesheet" href="../css/styles.css">
-  <style>
-
-
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Punto Cine - Película</title>
+  <link rel="stylesheet" href="../css/styles.css"/>
 </head>
-<body  class="pagina-pelicula">
+<body class="pagina-pelicula">
   <header class="contenedor-flex">
-          
-        <!-- Aca estamos dentro del header-->
-         
-        <div class="barra-top">
-            <img class="logo" src="../media/img/LogoPuntoCine.png" alt="Logo de Punto Cine">
-                 <nav>
-                 <!-- barra de navegación (nav) -->
-                  <ul class="nav-list">
-                    <li><a href="./index.html">CARTELERA</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                  </ul>
-                 </nav>
-              </div>
-
-
-            <!-- Titulo principal o de primera categoria (h1) -->
-     </header>
+    <div class="barra-top">
+      <img class="logo" src="../media/img/LogoPuntoCine.png" alt="Logo de Punto Cine"/>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="./index.html">CARTELERA</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="./servicios.html">Servicios</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main class="detalle-pelicula">
     <div class="contenido-pelicula">
-      <!-- Poster  -->
-       <div class="columna-izquierda">
       <div class="poster-pelicula">
-        <img src="../media/img/posterbatman.png" alt="Batman">
-        <div class="titulo-img">Batman</div> 
+        <img id="poster" src="" alt="Poster de la película"/>
+        <h2 id="titulo">Cargando...</h2>
       </div>
 
+      <div class="info-pelicula">
+        <h1 id="genero">Género</h1>
+        <p><strong>Detalles:</strong> <span id="descripcion">Descripción</span></p>
+        <p><strong>Duración:</strong> <span id="duracion"></span></p>
+        <p><strong>Director:</strong> <span id="director"></span></p>
+      </div>
 
-      <!-- Información general -->
-   <div class="info-pelicula">
-        <h1>Acción / Crimen</h1>
-        <p>
-          <strong>Detalles:</strong> Gotham está en peligro. Bruce Wayne vuelve a convertirse en Batman para enfrentar una amenaza que pondrá en jaque la ciudad. Esta nueva entrega combina acción intensa, drama y un enemigo inesperado.<br>
-          <strong>Duración:</strong> 2h 56m<br>
-          <strong>Director:</strong> Matt Reeves
-        </p>
-         </div>
-       <!-- IFRAME del tráiler -->
-        <div class="trailer">
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/HiWY63jDm2U?si=TkGxpyHmDD1nKyq-"
-                                        title="Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="trailer">
+        <iframe id="trailer" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="contenedor-pelicula">
+        <label for="pelicula">Elegí una película:</label>
+        <select id="pelicula">
+          <option value="414906">Batman ($10000)</option>
+          <option value="122917">El Hobbit ($10000)</option>
+          <option value="293660">Deadpool ($10000)</option>
+        </select>
+      </div>
+
+      <ul class="showcase">
+        <li><div class="asiento"></div><small>Disponible</small></li>
+        <li><div class="asiento seleccionado"></div><small>Seleccionado</small></li>
+        <li><div class="asiento ocupado"></div><small>Ocupado</small></li>
+      </ul>
+
+      <div class="contenedor">
+        <div class="pantalla"></div>
+        <div class="fila">
+          <div class="asiento"></div><div class="asiento"></div><div class="asiento"></div><div class="asiento"></div>
+          <div class="asiento"></div><div class="asiento"></div><div class="asiento"></div><div class="asiento"></div>
         </div>
-      
-        <a href="../index.html" class="btn-volver">← Volver a cartelera</a>
+        <div class="fila">
+          <div class="asiento"></div><div class="asiento ocupado"></div><div class="asiento ocupado"></div><div class="asiento"></div>
+          <div class="asiento"></div><div class="asiento ocupado"></div><div class="asiento"></div><div class="asiento"></div>
+        </div>
+        <p class="texto">
+          Has seleccionado <span id="count">0</span> asientos con un precio total de $<span id="total">0</span>.
+        </p>
       </div>
-             <div class="horarios">
-              <h2>Horarios disponibles</h2>
-                  <ul>
-                       <li>Jueves - 18:00, 21:00</li>
-                      <li>Viernes - 18:00, 21:00, 23:59</li>
-                     <li>Sábado - 16:00, 19:00, 22:00</li>
-                    <li>Domingo - 14:00, 17:00, 20:00</li>
-                  </ul>
-             </div>
+
+      <a href="../index.html" class="btn-volver">← Volver a cartelera</a>
     </div>
   </main>
+
+  <script src="../script.js"></script>
 </body>
 </html>
-
-
 

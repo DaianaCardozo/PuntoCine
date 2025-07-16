@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Combo Pochoclos",
+    "price": 2500,
+    "description": "Pochoclos grandes y bebida a elección.",
+    "image": "./media/img/pochoclos.png"
+  },
+  {
+    "id": 2,
+    "name": "Combo Pancho",
+    "price": 1800,
+    "description": "Pancho + bebida mediana.",
+    "image": "./media/img/combopancho.png"
+  },
+  {
+    "id": 3,
+    "name": "Combo Mega",
+    "price": 3200,
+    "description": "Pochoclos XL + Pancho + Bebida grande.",
+    "image": "./media/img/combomega.jpeg"
+  }
+]
