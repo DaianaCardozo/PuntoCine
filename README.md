@@ -35,6 +35,10 @@ Este proyecto fue desarrollado como parte de mi formación en desarrollo web fro
 
 Proyecto finalizado y en proceso de mejora continua.
 
+## Demo
+
+Ver proyecto online: https://daianacardozo.github.io/PuntoCine/
+
 ## Autora
 
 Desarrollado por Daiana Cardozo.
